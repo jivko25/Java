@@ -10,10 +10,10 @@ public class KnightTest {
 		System.out.print("Knight - test  - ");
 		
 		// 1. Arrange
-		Knight testPawn = new Knight(PieceColor.BLACK, 1, 0);
+		Knight testPawn = new Knight(PieceColor.BLACK, 5, 6);
 		
 		// 2. Act - Assert
-		boolean isValid = testPawn.isMovePosible(2, 2);
+		boolean isValid = testPawn.isMovePosible(4, 4);
 		String testMessage = (isValid) ? "Valid" : "Fail"; 
 		System.out.println(testMessage);
 	}
