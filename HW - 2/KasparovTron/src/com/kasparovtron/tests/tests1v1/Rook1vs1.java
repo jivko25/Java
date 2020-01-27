@@ -34,7 +34,7 @@ public class Rook1vs1 {
 			NewWhiteCol = input.nextInt();
 			Rook MoveRook = new Rook(PieceColor.BLACK, WhiteRow , WhiteCol);
 			isValid = MoveRook.isMovePosible(NewWhiteRow, NewWhiteCol);
-			Visualisation.MoveVisualisation(NewWhiteRow, NewWhiteCol);
+			Visualisation.MoveVisualisation(NewWhiteRow, NewWhiteCol, BlackRow, BlackCol);
 			System.out.println("");
 			if(isValid == false)
 			{
@@ -58,7 +58,7 @@ public class Rook1vs1 {
 			NewBlackCol = input.nextInt();
 			Rook MoveRook = new Rook(PieceColor.BLACK, BlackRow , BlackCol);
 			isValid = MoveRook.isMovePosible(NewBlackRow, NewBlackCol);
-			Visualisation.MoveVisualisation(NewBlackRow, NewBlackCol);
+			Visualisation.MoveVisualisation(NewBlackRow, NewBlackCol, WhiteRow, WhiteCol);
 			System.out.println("");
 			if(isValid == false)
 			{
