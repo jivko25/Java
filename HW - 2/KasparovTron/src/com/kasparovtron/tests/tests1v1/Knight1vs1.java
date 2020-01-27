@@ -34,7 +34,7 @@ public class Knight1vs1 {
 			NewWhiteCol = input.nextInt();
 			Knight MoveKnight = new Knight(PieceColor.BLACK, WhiteRow , WhiteCol);
 			isValid = MoveKnight.isMovePosible(NewWhiteRow, NewWhiteCol);
-			Visualisation.MoveVisualisation(NewWhiteRow, NewWhiteCol);
+			Visualisation.MoveVisualisation(NewWhiteRow, NewWhiteCol, BlackRow, BlackCol);
 			System.out.println("");
 			if(isValid == false)
 			{
@@ -57,7 +57,7 @@ public class Knight1vs1 {
 			NewBlackCol = input.nextInt();
 			Knight MoveKnight = new Knight(PieceColor.BLACK, WhiteRow , WhiteCol);
 			isValid = MoveKnight.isMovePosible(NewBlackRow, NewBlackCol);
-			Visualisation.MoveVisualisation(NewBlackRow, NewBlackCol);
+			Visualisation.MoveVisualisation(NewBlackRow, NewBlackCol, WhiteRow, WhiteCol);
 			System.out.println("");
 			if(isValid == false)
 			{
