@@ -34,7 +34,7 @@ public class King1vs1 {
 			NewWhiteCol = input.nextInt();
 			King KingMove = new King(PieceColor.BLACK, WhiteRow , WhiteCol);
 			isValid = KingMove.isMovePosible(NewWhiteRow, NewWhiteCol);
-			Visualisation.MoveVisualisation(NewWhiteRow, NewWhiteCol);
+			Visualisation.MoveVisualisation(NewWhiteRow, NewWhiteCol, BlackRow, BlackCol);
 			System.out.println("");
 			if(isValid == false)
 			{
@@ -58,7 +58,7 @@ public class King1vs1 {
 			NewBlackCol = input.nextInt();
 			King KingMove = new King(PieceColor.BLACK, WhiteRow , WhiteCol);
 			isValid = KingMove.isMovePosible(NewBlackRow, NewBlackCol);
-			Visualisation.MoveVisualisation(NewBlackRow, NewBlackCol);
+			Visualisation.MoveVisualisation(NewBlackRow, NewBlackCol, WhiteRow, WhiteCol);
 			System.out.println("");
 			if(isValid == false)
 			{
