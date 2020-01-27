@@ -34,7 +34,7 @@ public class Queen1vs1 {
 			NewWhiteCol = input.nextInt();
 			Queen MoveQueen = new Queen(PieceColor.BLACK, WhiteRow , WhiteCol);
 			isValid = MoveQueen.isMovePosible(NewWhiteRow, NewWhiteCol);
-			Visualisation.MoveVisualisation(NewWhiteRow, NewWhiteCol);
+			Visualisation.MoveVisualisation(NewWhiteRow, NewWhiteCol, BlackRow, BlackCol);
 			System.out.println("");
 			if(isValid == false)
 			{
@@ -58,7 +58,7 @@ public class Queen1vs1 {
 			NewBlackCol = input.nextInt();
 			Queen MoveQueen = new Queen(PieceColor.BLACK, BlackRow , BlackCol);
 			isValid = MoveQueen.isMovePosible(NewBlackRow, NewBlackCol);
-			Visualisation.MoveVisualisation(NewBlackRow, NewBlackCol);
+			Visualisation.MoveVisualisation(NewBlackRow, NewBlackCol, WhiteRow, WhiteCol);
 			System.out.println("");
 			if(isValid == false)
 			{
