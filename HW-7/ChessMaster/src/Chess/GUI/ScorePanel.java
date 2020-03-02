@@ -9,7 +9,7 @@ import java.awt.*;
 
 public class ScorePanel extends JPanel {
 
-	private JPanel CurentPlayer = new JPanel();
+    private JPanel CurentPlayer = new JPanel();
     private JPanel whiteScore = new JPanel();
     private JPanel blackScore = new JPanel();
 
@@ -40,8 +40,9 @@ public class ScorePanel extends JPanel {
         this.setVisible(true);
         this.setBackground(Color.LIGHT_GRAY);
         this.setLayout(new GridBagLayout());
+	CurentPlayer.setBackground(Color.LIGHT_GRAY);
         whiteScore.setBackground(Color.LIGHT_GRAY);
-        blackScore.setBackground(Color.LIGHT_GRAY);
+	blackScore.setBackground(Color.LIGHT_GRAY);
         this.whiteScore.add(WhitePanel);
         this.blackScore.add(BlackPanel);
         this.blackScore.add(CurentPlayerLabel);
